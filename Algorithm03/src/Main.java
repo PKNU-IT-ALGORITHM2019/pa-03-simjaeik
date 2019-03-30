@@ -12,10 +12,10 @@ public class Main {
 	public static void main(String[] args) {
 		getFirstLine();		//첫줄 출력
 		
-		bubble.doBubble();				// 각각의 정렬방법으로 6개의 데이터를 정렬시킴
-		selection.doSelection();
-		insertion.doInsertion();
-		merge.doMerge();
+//		bubble.doBubble();				// 각각의 정렬방법으로 6개의 데이터를 정렬시킴
+//		selection.doSelection();
+//		insertion.doInsertion();
+//		merge.doMerge();
 		quick.doQuick();
 		
 		handlePrint();
