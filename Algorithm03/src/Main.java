@@ -6,17 +6,21 @@ public class Main {
 	public static InsertionSort insertion = new InsertionSort();
 	public static MergeSort merge = new MergeSort();
 	public static QuickSort quick = new QuickSort();
+	public static HeapSort heap = new HeapSort();
+	public static JavaSort java = new JavaSort();
 	
 	// 각각의 클래스를 할당해준다.
 	
 	public static void main(String[] args) {
 		getFirstLine();		//첫줄 출력
 		
-//		bubble.doBubble();				// 각각의 정렬방법으로 6개의 데이터를 정렬시킴
-//		selection.doSelection();
-//		insertion.doInsertion();
-//		merge.doMerge();
+		bubble.doBubble();				// 각각의 정렬방법으로 6개의 데이터를 정렬시킴
+		selection.doSelection();
+		insertion.doInsertion();
+		merge.doMerge();
 		quick.doQuick();
+		heap.doHeap();
+		java.doJava();
 		
 		handlePrint();
 	}
@@ -26,7 +30,7 @@ public class Main {
 	}
 	
 	private static void handlePrint() {		// 출력을 담당한다
-		for(int i=0; i < 7; i++) {
+		for(int i=0; i < 9; i++) {
 			System.out.print(DataSet.sortName[i]+" :  \t");
 			for(int j=0; j < 6; j++) {
 				System.out.printf(" %.5f ", DataSet.sortTime[i][j]);

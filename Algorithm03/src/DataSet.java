@@ -4,6 +4,9 @@ public class DataSet {				// 이번 과제의 모든 데이터를 총괄하는 클래스
 	public static int k =1000;
 	public static int kk = 10000;
 	public static int kkk = 100000;	
+	
+	private static int sortNumber = 9;
+	private static int dataNumber = 6;
 
 	public static int [] reverseData1K = new int [k];
 	public static int [] reverseData10K = new int [kk];
@@ -12,8 +15,8 @@ public class DataSet {				// 이번 과제의 모든 데이터를 총괄하는 클래스
 	public static int [] randomData10K = new int [kk];
 	public static int [] randomData100K = new int [kkk];
 	
-	public static String [] sortName = new String [7];
-	public static double [][] sortTime = new double [7][6];
+	public static String [] sortName = new String [sortNumber];
+	public static double [][] sortTime = new double [sortNumber][dataNumber];
 	
 	public static void getData(int num) {				// 여섯 종류의 배열들의 값을 받아준다.
 		// 0은 리버스, 1은 랜덤함수 초기화.
